@@ -1,0 +1,120 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #d0ecff;
+}
+
+.title {
+  font-size: 48px;
+  color: #004080;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.title span {
+  color: #ff6600;
+}
+
+.mode-selection {
+  margin-top: 50px;
+}
+.mode-selection button {
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 18px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.mode-selection button:hover {
+  background: #0056b3;
+}
+
+.names input {
+  padding: 8px;
+  margin: 5px;
+  font-size: 16px;
+}
+.names button {
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #333;
+  cursor: pointer;
+}
+
+.status {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.points {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.restart, .exit-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.restart {
+  background-color: #ffc107;
+}
+.exit-btn {
+  background-color: #dc3545;
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* Dialog box styling */
+.dialog {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.dialog-content {
+  background: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  margin: 100px auto;
+  width: 300px;
+  text-align: center;
+}
+.dialog-content button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}

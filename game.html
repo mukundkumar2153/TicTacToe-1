@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="title">🎮 Tic <span>Tac</span> Toe 🎯</h1>
+
+  <button onclick="exitGame()" class="exit-btn">⬅️ Exit</button>
+
+  <div class="names" id="nameInputs">
+    <input type="text" id="player1" placeholder="Player 1 Name (X)">
+    <input type="text" id="player2" placeholder="Player 2 Name (O)">
+    <button onclick="startGame()">Start Game</button>
+  </div>
+
+  <div class="board" id="board">
+    <div class="cell" data-index="0"></div>
+    <div class="cell" data-index="1"></div>
+    <div class="cell" data-index="2"></div>
+    <div class="cell" data-index="3"></div>
+    <div class="cell" data-index="4"></div>
+    <div class="cell" data-index="5"></div>
+    <div class="cell" data-index="6"></div>
+    <div class="cell" data-index="7"></div>
+    <div class="cell" data-index="8"></div>
+  </div>
+
+  <div class="status" id="status">Loading...</div>
+
+  <div class="points">
+    <p><span id="nameX">Player X</span>: <span id="scoreX">0</span> points</p>
+    <p><span id="nameO">Player O</span>: <span id="scoreO">0</span> points</p>
+  </div>
+
+  <button class="restart" onclick="restartGame()">Restart</button>
+
+  <!-- Win/Draw Dialog -->
+  <div class="dialog" id="dialog">
+    <div class="dialog-content">
+      <p id="dialogMessage"></p>
+      <button onclick="closeDialog()">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
